@@ -5,6 +5,21 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    abstract class Figure
+    {
+        //Площадь фигуры 
+        public abstract double square();
+        public abstract double perimeter();
+    }
+
+    class PrintFigur
+    {
+        public void print(Figure f)
+        {
+            Console.WriteLine("perimetr figure = " + f.perimeter() + ", square figure = " + f.square());
+        }
+    }
+
     class Massive
     {
         public int Sum(int[] x)
