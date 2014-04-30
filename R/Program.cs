@@ -5,6 +5,13 @@ using System.Text;
 
 namespace ConsoleApplication1
 {
+    abstract class Figure
+    {
+        //Площадь фигуры 
+        public abstract double square();
+        public abstract double perimeter();
+    }
+
     class Massive
     {
         public int Sum(int[] x)
