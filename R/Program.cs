@@ -47,6 +47,12 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
+            int[] a = { 1, -2, -1, 1, 1 };
+            Massive ob = new Massive();
+            Console.WriteLine(ob.Sum(a));
+            Console.WriteLine(ob.Sum1(a));
+            Console.WriteLine(ob.SumOtr(a));
+            Console.ReadLine();
         }
     }
 }
