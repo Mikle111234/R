@@ -12,6 +12,29 @@ namespace ConsoleApplication1
         public abstract double perimeter();
     }
 
+    class Triangle : Figure
+    {
+        double a, b, c; //Стороны 
+        //Конструктор 
+        public Triangle(double a, double b, double c)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        public override double square()
+        {
+            //Используем формулу Герока 
+            double p = (a + b + c) / 2;
+            return Math.Sqrt(p * (p - a) * (p - b) * (p - c));
+        }
+        public override double perimeter()
+        {
+            double per = a + b + c;
+            return per;
+        }
+    }
+
     class PrintFigur
     {
         public void print(Figure f)
